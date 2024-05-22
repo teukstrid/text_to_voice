@@ -1,0 +1,50 @@
+<main class="mb-4">
+  <div class="container px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-7">
+        </br>
+        <h1> TEXT TO VOICE </h1>
+        <div class="my-5">
+          <form
+            id="contactForm"
+            name="sentMessage"
+            action="{{ url_for('home') }}"
+            method="post"
+          >
+<!--              <div class="dropdown">-->
+<!--                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">-->
+<!--                Voice-->
+<!--                </button>-->
+<!--                    <ul class="dropdown-menu">-->
+<!--                        <li><a class="dropdown-item" href="#">Jenny</a></li>-->
+<!--                        <li><a class="dropdown-item" href="#">Benny</a></li>-->
+<!--                        <li><a class="dropdown-item" href="#">Lenny</a></li>-->
+<!--                    </ul>-->
+<!--               </div>-->
+            </br>
+            <div class="form-floating">
+              <textarea
+                class="form-control"
+                id="message"
+                name="message"
+                placeholder="Enter the text you want changed into voice here..."
+                required
+                style="height: 12rem"
+              ></textarea>
+              <label for="message">Text to voice</label>
+            </div>
+            <br />
+            <button
+              class="btn btn-primary text-uppercase"
+              id="submitButton"
+              type="submit"
+            >
+              Send
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
